@@ -20,8 +20,8 @@ class IndexController extends Controller
 		require_once(base_path().'/vendor/alidayu/lib/Ucpaas.class.php');
 
 		//初始化必填
-		$options['accountsid']='8af98bc4b671cabc5fb1c0db6d79e361';
-		$options['token']='bd9cc733c737228d0cb609c89374e679';
+		$options['accountsid']='xxxxxxxxxxxxxxxxxxx';
+		$options['token']='xxxxxxxxxxxxxxxxxxx';
 
 
 		//初始化 $options必填
@@ -33,7 +33,7 @@ class IndexController extends Controller
 		//短信验证码（模板短信）,默认以65个汉字（同65个英文）为一条（可容纳字数受您应用名称占用字符影响），超过长度短信平台将会自动分割为多条发送。分割后的多条短信将按照具体占用条数计费。
 		$rand=mt_rand(1000,9999);
 		$request->session()->put('smscode',$rand);
-		$appId = "7e3c8ff06b194d599dc7197252edbde3";
+		$appId = "xxxxxxxxxxxxxxxxxxx";
 		$to = $mobile;
 		$templateId = "248486";
 		$param=$rand;		
